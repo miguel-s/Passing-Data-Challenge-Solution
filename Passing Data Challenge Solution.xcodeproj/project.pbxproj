@@ -21,6 +21,7 @@
 		398F014819256CB800CBC65C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398F012A19256CB800CBC65C /* UIKit.framework */; };
 		398F015019256CB800CBC65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 398F014E19256CB800CBC65C /* InfoPlist.strings */; };
 		398F015219256CB800CBC65C /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F015119256CB800CBC65C /* Passing_Data_Challenge_SolutionTests.m */; };
+		398F015D19256DB000CBC65C /* MSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 398F015C19256DB000CBC65C /* MSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		398F014D19256CB800CBC65C /* Passing Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		398F014F19256CB800CBC65C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		398F015119256CB800CBC65C /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		398F015B19256DB000CBC65C /* MSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDetailViewController.h; sourceTree = "<group>"; };
+		398F015C19256DB000CBC65C /* MSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				398F013519256CB800CBC65C /* MSAppDelegate.h */,
 				398F013619256CB800CBC65C /* MSAppDelegate.m */,
 				398F013819256CB800CBC65C /* Main.storyboard */,
+				398F015B19256DB000CBC65C /* MSDetailViewController.h */,
+				398F015C19256DB000CBC65C /* MSDetailViewController.m */,
 				398F013B19256CB800CBC65C /* MSViewController.h */,
 				398F013C19256CB800CBC65C /* MSViewController.m */,
 				398F013E19256CB800CBC65C /* Images.xcassets */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				398F013719256CB800CBC65C /* MSAppDelegate.m in Sources */,
+				398F015D19256DB000CBC65C /* MSDetailViewController.m in Sources */,
 				398F013D19256CB800CBC65C /* MSViewController.m in Sources */,
 				398F013319256CB800CBC65C /* main.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "MSViewController.h"
+#import "MSDetailViewController.h"
 
 @interface MSViewController ()
 
@@ -18,6 +19,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([sender isKindOfClass:[UIButton class]]) {
+        if([segue.destinationViewController isKindOfClass:[MSDetailViewController class]]) {
+            MSDetailViewController *nextViewController = segue.destinationViewController;
+            
+            nextViewController.textField = self.textField;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
