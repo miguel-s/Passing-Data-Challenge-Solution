@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     
     self.textLabel.text = self.textField.text;
+    self.updateText.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,5 +48,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)updateButton:(UIButton *)sender {
+    
+    self.textLabel.text = self.updateText.text;
+    [self.delegate didUpdateText:self.updateText.text];
+}
+
+#pragma mark - UITextField Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.updateText resignFirstResponder];
+    return YES;
+}
 
 @end

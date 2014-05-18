@@ -7,7 +7,6 @@
 //
 
 #import "MSViewController.h"
-#import "MSDetailViewController.h"
 
 @interface MSViewController ()
 
@@ -19,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -28,6 +28,7 @@
             MSDetailViewController *nextViewController = segue.destinationViewController;
             
             nextViewController.textField = self.textField;
+            nextViewController.delegate = self;
         }
     }
 }
@@ -36,6 +37,23 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - MSDetailView Delegate
+
+- (void)didUpdateText:(NSString *)text
+{
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    
+    self.textField.text = text;
+}
+
+#pragma mark - UITextfield Delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 @end

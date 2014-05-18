@@ -118,10 +118,10 @@
 				398F013519256CB800CBC65C /* MSAppDelegate.h */,
 				398F013619256CB800CBC65C /* MSAppDelegate.m */,
 				398F013819256CB800CBC65C /* Main.storyboard */,
-				398F015B19256DB000CBC65C /* MSDetailViewController.h */,
-				398F015C19256DB000CBC65C /* MSDetailViewController.m */,
 				398F013B19256CB800CBC65C /* MSViewController.h */,
 				398F013C19256CB800CBC65C /* MSViewController.m */,
+				398F015B19256DB000CBC65C /* MSDetailViewController.h */,
+				398F015C19256DB000CBC65C /* MSDetailViewController.m */,
 				398F013E19256CB800CBC65C /* Images.xcassets */,
 				398F012D19256CB800CBC65C /* Supporting Files */,
 			);
@@ -463,6 +463,7 @@
 				398F015719256CB800CBC65C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		398F015819256CB800CBC65C /* Build configuration list for PBXNativeTarget "Passing Data Challenge SolutionTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +472,7 @@
 				398F015A19256CB800CBC65C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
